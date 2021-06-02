@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body bgcolor="black">
+  <div class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+    </div>
+    <div class="topnav-right">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="login.html"><i class="fa fa-fw fa-sign-in"></i>Login</a>
+      <a href="#"><i class="fa fa-fw fa-users"></i>Team</a>
+    </div>
+  </div> 
+  <!--image slider start-->
+  <div class="slider">
+    <div class="slides">
+      <!--radio button start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <!--radio button end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="images/image-1.jpg" alt="slide1" class="center">
+      </div>
+      <div class="slide">
+        <img src="images/image-2.jpg" alt="slide2" class="center">
+      </div>
+      <div class="slide">
+        <img src="images/image-3.jpg" alt="slide3" class="center">
+      </div>
+      <div class="slide">
+        <img src="images/image-4.jpg" alt="slide4" class="center">
+      </div>
+      <div class="slide">
+        <img src="images/image-5.jpg" alt="slide5" class="center">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+  <hr>
+  <!--paragraph starts-->
+  <div class="para">
+    <h2 style="text-align:center">Meet MOVREC, your new recommendation platform</h2>
+    <br>
+    <p>
+      Say hello to the new way to discover top rated movies and TV shows to watch.
+      MOVREC finds recommendations you’ll love. It works by connecting you to like minded people with similar taste. MOVREC then uses these connections to generate new recommendations, personalized just for you.
+      <br>
+      <br>
+      You’re at the brink of the community-powered era of recommendations. It’s the future of entertainment search and discovery.
+    </p>
+    <br>
+    <br>
+    <h2 style="text-align:center">The problem with finding good movies and TV shows</h2>
+    <br>
+    <p>
+      Say you want to watch a movie tonight or binge-watch a sitcom this weekend. You search online using Google, YouTube, Reddit, Yahoo Answers, Quora, even Twitter, until you eventually choose a title you MIGHT like.
+      <br>
+      <br>
+      We do this a lot - waste a lot of time searching only to end up with an 'okay' movie or TV series recommendation.
+      <br>
+      <br>
+      But we know 'okay' isn't good enough. Your time is important, and watching movies and TV episodes that don’t really entertain or inspire you is a wasted evening. You need something that recommends a great movie every time.
+    </p>
+  </div>
+  <hr>
+  <!--paragraph ends-->
+  <!--Footer starts-->
+  <div class="footer">
+    <a href="" target="_blank">
+      <i class="fa fa-2x fa-facebook"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa fa-2x fa-instagram"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa fa-2x fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/paras-bisht-00b681150/" target="_blank">
+      <i class="fa fa-2x fa-linkedin"></i>
+    </a>
+  </div>
+  <!--Footer ends-->
+  <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter>5){
+        counter=1;
+      }
+    },5000);
+  </script>
+</body>
+</html>
